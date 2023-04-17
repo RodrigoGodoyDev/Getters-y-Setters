@@ -2,23 +2,43 @@ public class propiedades {
     public static void main(String[] args){
         Vehiculo coche = new Vehiculo();
         coche.setTipo("Coupe");
+        coche.setVelocidadmaxima(120);
+        coche.setRapido(true);
 
         Vehiculo moto = new Vehiculo();
         moto.setTipo("Scotter");
+        moto.setVelocidadmaxima(50);
+        moto.setRapido(false);
 
         System.out.println(coche.getTipo());
-        System.out.println(moto.getTipo());
+        System.out.println(coche.getVelocidadmaxima());
+        System.out.println(coche.isRapido());
+        System.out.println(moto.getTipo() + " " + moto.getVelocidadmaxima() + " " + moto.isRapido());
     }
 }
 
 class Vehiculo {
     private String tipo;
+    private int velocidadmaxima;
+    private boolean rapido;
 
     public void setTipo(String tipo){
         this.tipo = tipo;
     }
-
     public String getTipo(){
         return this.tipo;
     }
-}
+    public void setVelocidadmaxima(int velocidadmaxima){
+        this.velocidadmaxima = velocidadmaxima;
+    }
+    public int getVelocidadmaxima(){
+        return this.velocidadmaxima;
+    }
+    public void setRapido (boolean rapido) {
+        this.rapido = rapido;
+    }
+
+        public boolean isRapido(){
+            return this.rapido;
+        }
+    }
