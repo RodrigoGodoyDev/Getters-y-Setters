@@ -1,0 +1,23 @@
+public class propiedades {
+    public static void main(String[] args){
+        Vehiculo vehiculo = new Vehiculo();
+
+        vehiculo.setTipo("coche");
+
+        String tipo = vehiculo.getTipo();
+        System.out.println(tipo);
+
+    }
+}
+
+class Vehiculo {
+    private String tipo;
+
+    public void setTipo(String tipo){
+        this.tipo = tipo;
+    }
+
+    public String getTipo(){
+        return this.tipo;
+    }
+}
