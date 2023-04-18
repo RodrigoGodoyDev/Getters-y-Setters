@@ -1,0 +1,25 @@
+public class propiedades {
+    public static void main(String[] args){
+    }
+}
+
+abstract class Vehiculo {
+    private String tipo;
+    private int velocidadmaxima;
+    private String sonido;
+
+    public void setTipo(String tipo){
+        this.tipo = tipo;
+    }
+    public String getTipo(){
+        return this.tipo;
+    }
+    public void setVelocidadmaxima(int velocidadmaxima){
+        this.velocidadmaxima = velocidadmaxima;
+    }
+    public int getVelocidadmaxima(){
+        return this.velocidadmaxima;
+    }
+    abstract public void setSonido (String sonido);
+    abstract public String getSonido();
+    }
